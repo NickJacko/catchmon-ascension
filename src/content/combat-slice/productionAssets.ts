@@ -50,7 +50,14 @@ import { EMBER_WISP_ENEMY_ID, VULKAN_WARDEN_BOSS_ID } from "./enemies.ts";
 
 const NORMALIZED_ROOT =
   "reference/design-production/ascension-wave0/normalized-v1";
-const RUNTIME_ROOT = "/assets/combat-slice";
+// `import.meta.env.BASE_URL` (Vite's own env var, always ends with "/") —
+// `/assets/combat-slice` under the normal root deploy, but
+// `/<repo>/assets/combat-slice` under a GitHub Pages subpath build
+// (`vite.config.ts`'s `GH_PAGES_BASE`). A hardcoded leading "/" here 404s
+// every combat asset on a subpath deploy — Vite's own base-URL rewriting
+// only covers references it parses at build time (HTML/CSS/`import.meta.glob`),
+// not runtime string literals like this one.
+const RUNTIME_ROOT = `${import.meta.env.BASE_URL}assets/combat-slice`;
 
 export const COMBAT_VULKANKRATER_BACKGROUND_ASSET_ID = AssetId.from(
   "combat.vulkankrater.background",

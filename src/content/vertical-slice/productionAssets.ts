@@ -36,7 +36,11 @@ import {
 } from "../../domain/assets/index.ts";
 
 const NORMALIZED_ROOT = "reference/design-production/normalized-v1";
-const RUNTIME_ROOT = "/assets/vertical-slice";
+// `import.meta.env.BASE_URL` (Vite's own env var, always ends with "/") —
+// see `content/combat-slice/productionAssets.ts`'s identical comment for
+// why this can't be a hardcoded leading "/" (breaks under a GitHub Pages
+// subpath build).
+const RUNTIME_ROOT = `${import.meta.env.BASE_URL}assets/vertical-slice`;
 
 function spatialAsset(
   assetId: AssetId,
