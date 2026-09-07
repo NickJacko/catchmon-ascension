@@ -1,0 +1,5 @@
+.app-goal-banner {
+  display: flex;
+  padding: var(--space-2) var(--gutter-screen) 0;
+  background: var(--surface-panel);
+}

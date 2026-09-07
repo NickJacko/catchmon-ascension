@@ -1,0 +1,35 @@
+.ds-panel {
+  border-radius: var(--radius-panel);
+  padding: var(--pad-panel);
+  box-shadow: var(--shadow-card), var(--inset-panel);
+}
+.ds-panel--cream {
+  background: var(--surface-panel);
+  border: 1px solid var(--border-hairline);
+}
+.ds-panel--card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+}
+.ds-panel--sand {
+  background: var(--cs-sand-200);
+  border: 1px solid var(--border-default);
+}
+.ds-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--stack-default);
+}
+.ds-panel__title {
+  margin: 0;
+  font: var(--type-section);
+  color: var(--text-body);
+}
+.ds-panel__subtitle {
+  margin: 4px 0 0;
+  font: var(--type-body);
+  font-size: var(--text-body-sm);
+  color: var(--text-muted);
+}

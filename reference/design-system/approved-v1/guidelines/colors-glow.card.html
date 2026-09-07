@@ -1,0 +1,12 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Earned glow" subtitle="Selection, masterwork and capture only — never ambient UI glow" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>html,body{margin:0}body{width:700px;height:150px;box-sizing:border-box;background:var(--surface-app);font-family:var(--font-ui);color:var(--text-body);padding:16px;overflow:hidden}
+.sw{display:flex;gap:8px}.sw>div{flex:1}.chip{height:52px;border-radius:var(--radius-s);border:1px solid var(--border-hairline)}
+.n{font:var(--type-label);color:var(--text-body);margin-top:6px;display:block}
+.h{font-family:var(--font-numeric);font-size:10px;color:var(--text-subtle);display:block;margin-top:2px}
+.tok{font-family:var(--font-numeric);font-size:10px;color:var(--text-subtle)}
+</style></head><body><div class="sw">
+ <div><div class="chip" style="background:var(--surface-card);box-shadow:var(--glow-ring-selection)"></div><span class="n">Selection</span><span class="h">--glow-ring-selection</span></div>
+ <div><div class="chip" style="background:var(--surface-card);box-shadow:var(--glow-ring-masterwork)"></div><span class="n">Masterwork</span><span class="h">--glow-ring-masterwork</span></div>
+ <div><div class="chip" style="background:var(--surface-card);box-shadow:0 0 0 2px #A3E7F0,0 0 14px var(--glow-capture)"></div><span class="n">Capture</span><span class="h">--glow-capture</span></div>
+ <div style="flex:1.4;font:var(--type-body);font-size:12px;color:var(--text-muted);padding-left:8px">The core glows; the surrounding form stays legible. No permanent bloom, no glowing buttons, no ambient decorative light.</div>
+ </div></body></html>

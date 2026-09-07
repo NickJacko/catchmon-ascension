@@ -1,0 +1,21 @@
+.ds-element-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ds-element-badge__disc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background: var(--surface-card);
+  border: 1.5px solid var(--el-1);
+  box-shadow: var(--shadow-small);
+  flex: 0 0 auto;
+}
+.ds-element-badge__label {
+  font: var(--type-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--el-1);
+}

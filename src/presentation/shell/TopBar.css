@@ -1,0 +1,45 @@
+.app-topbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  /* `env(safe-area-inset-*)` clears the status bar / notch / dynamic
+     island inside a native WebView shell (Capacitor); falls back to 0 on
+     the web, where the browser chrome already reserves that space. */
+  padding: calc(14px + env(safe-area-inset-top)) var(--gutter-screen) 12px;
+  padding-left: calc(var(--gutter-screen) + env(safe-area-inset-left));
+  padding-right: calc(var(--gutter-screen) + env(safe-area-inset-right));
+  background: var(--surface-panel);
+  border-bottom: 1px solid var(--border-hairline);
+  box-shadow: var(--shadow-small);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.app-topbar__title {
+  margin: 0;
+  flex: 1;
+  font: var(--type-section);
+  color: var(--text-body);
+}
+.app-topbar__chips {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.app-topbar__icon-button {
+  width: var(--touch-min);
+  height: var(--touch-min);
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+}
+.app-topbar__icon-button:hover {
+  background: var(--action-secondary-hover);
+}
+.app-topbar__icon-button:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-ring-selection);
+}

@@ -1,0 +1,25 @@
+.battle-scene-host {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-panel);
+  border: 1px solid var(--border-hairline);
+  box-shadow: var(--shadow-card);
+  background: var(--surface-panel);
+}
+
+.battle-scene-host canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.battle-scene-host--fallback {
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--text-muted);
+  font: var(--type-body);
+}

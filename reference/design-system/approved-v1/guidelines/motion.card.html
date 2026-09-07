@@ -1,0 +1,10 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Motion" subtitle="Soft spring, quick ease-out, slight overshoot. No linear tweens, no shakes" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>html,body{margin:0}body{width:700px;height:180px;box-sizing:border-box;background:var(--surface-app);font-family:var(--font-ui);color:var(--text-body);padding:16px;overflow:hidden}
+.sw{display:flex;gap:8px}.sw>div{flex:1}.chip{height:52px;border-radius:var(--radius-s);border:1px solid var(--border-hairline)}
+.n{font:var(--type-label);color:var(--text-body);margin-top:6px;display:block}
+.h{font-family:var(--font-numeric);font-size:10px;color:var(--text-subtle);display:block;margin-top:2px}
+.tok{font-family:var(--font-numeric);font-size:10px;color:var(--text-subtle)}
+</style></head><body><style>@keyframes cs-pop{0%{transform:scale(.9)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+ .m{height:52px;border-radius:var(--radius-card);background:var(--surface-card);border:1px solid var(--border-hairline);box-shadow:var(--shadow-card);animation:cs-pop var(--dur-base) var(--ease-overshoot) infinite alternate}</style>
+ <div style="display:flex;gap:14px"><div style="flex:1;text-align:center"><div class="m"></div><span class="n">instant 90ms</span></div><div style="flex:1;text-align:center"><div class="m"></div><span class="n">fast 140ms</span></div><div style="flex:1;text-align:center"><div class="m"></div><span class="n">base 220ms</span></div><div style="flex:1;text-align:center"><div class="m"></div><span class="n">slow 360ms</span></div><div style="flex:1;text-align:center"><div class="m"></div><span class="n">vfx 900ms</span></div></div>
+ <span class="tok" style="display:block;margin-top:8px">--ease-out · --ease-in-out · --ease-overshoot · --ease-anticipate · --press-scale .97</span></body></html>

@@ -1,0 +1,53 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Shop" subtitle="Product & Catchmon cards, slots, element badges, currency" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>html,body{margin:0}body{width:700px;background:var(--surface-app);font-family:var(--font-ui);color:var(--text-body);padding:20px;box-sizing:border-box}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.lbl{font:var(--type-label);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--text-subtle);margin:0 0 6px}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script>window.CATCHMON_ICON_BASE="../../assets/icons/";</script>
+<script src="../../_ds_bundle.js"></script></head><body><div id="root"></div>
+<script type="text/babel">
+const { ProductCard, CatchmonCard, Slot, CurrencyChip, ElementBadge, StatusPill } = window.CatchmonShopDesignSystem_709fd4;
+const A='../../assets/catchmons/';
+function Card(){
+  return (<div>
+    <div className="grid">
+      <CatchmonCard name="Terranox" element="earth" art={A+'terranox.png'} caption="Stoneflank Ridge"/>
+      <CatchmonCard name="Zappiri" element="electric" art={A+'zappiri.png'} glow caption="Just captured"/>
+      <CatchmonCard name="Voidalon" element="dark" art={A+'voidalon.png'} discovered={false}/>
+      <ProductCard name="Glacelyra" art={A+'glacelyra.png'} price={2480} tier="masterwork" element="ice"/>
+    </div>
+    <div className="row" style={{alignItems:'flex-start'}}>
+      <div>
+        <p className="lbl">Slots</p>
+        <div className="row">
+          <Slot art={A+'nuttiki.png'} size={64}/>
+          <Slot art={A+'ripplee.png'} size={64} tier="masterwork"/>
+          <Slot art={A+'cogmino.png'} size={64} selected/>
+          <Slot empty size={64}/>
+          <Slot locked size={64}/>
+        </div>
+      </div>
+      <div style={{marginLeft:18}}>
+        <p className="lbl">Currency</p>
+        <div className="row">
+          <CurrencyChip kind="coin" amount={4820}/>
+          <CurrencyChip kind="coin" amount={4820} delta="-240"/>
+          <CurrencyChip kind="momentum" amount={12} size="sm"/>
+        </div>
+      </div>
+    </div>
+    <div style={{marginTop:14}}>
+      <p className="lbl">Element compass badges</p>
+      <div className="row" style={{gap:8}}>
+        {['fire','water','electric','grass','earth','poison','normal','ice','fairy','wind','steel','psychic','light','dark','ghost','dragon','cosmic']
+          .map(e=><ElementBadge key={e} element={e} size="sm"/>)}
+      </div>
+    </div>
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card/>);
+</script></body></html>

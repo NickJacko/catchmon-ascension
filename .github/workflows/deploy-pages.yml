@@ -1,0 +1,73 @@
+# Deploys the production web build (the same `pnpm build` output the
+# Capacitor native shell also bundles) to GitHub Pages as an installable
+# HTTPS PWA. See docs/rebuild/MOBILE_APP_TESTING.md's "Installable PWA
+# (hosted)" section for the full picture — this file only prepares the
+# deploy path; it does not run on its own.
+#
+# INERT until a human:
+#   1. `git init` / pushes this repo to a real GitHub repository, AND
+#   2. enables Pages in that repo's Settings -> Pages, with
+#      "Source: GitHub Actions", AND
+#   3. manually runs this workflow (Actions tab -> "Deploy to GitHub
+#      Pages" -> "Run workflow").
+#
+# Deliberately `workflow_dispatch`-only (no `on: push`) — a stray commit
+# must never silently publish a mid-development build. Add a `push:
+# branches: [main]` trigger later if continuous deployment is actually
+# wanted.
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # A GitHub Pages *project* page (the default for any repo that
+      # isn't itself named `<owner>.github.io`) is served from
+      # `https://<owner>.github.io/<repo>/`, not the domain root — every
+      # asset URL needs that `/repo/` prefix baked in at build time
+      # (`vite.config.ts`'s `base: process.env.GH_PAGES_BASE ?? "/"`).
+      # `github.event.repository.name` is the actual repo name at deploy
+      # time, so this never needs hand-editing when/if the repo is
+      # renamed.
+      - run: pnpm build
+        env:
+          GH_PAGES_BASE: /${{ github.event.repository.name }}/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

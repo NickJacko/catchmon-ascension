@@ -1,0 +1,43 @@
+/* ELEMENT COMPASS — APPROVED. 17 elements, each primary / secondary / glow.
+   Status: final approved Catchmon Shop element colours. Do not re-derive or re-tune.
+   Provenance: the Art Brief names the 17 elements without hex values; these were sampled
+   from the 16 approved Catchmon masters and signed off as the Design System values.
+   Rule SL-08: element colour enters as accent, symbol, glow or silhouette change.
+   It NEVER repaints a surface and never becomes a full colour wash. */
+:root{
+  --el-fire-1:#C2481F;      --el-fire-2:#E9762A;      --el-fire-glow:#FFB25E;
+  --el-water-1:#2F6C93;     --el-water-2:#5FA8CE;     --el-water-glow:#A8DCF2;
+  --el-electric-1:#C9A320;  --el-electric-2:#F0D64A;  --el-electric-glow:#FFF2A8;
+  --el-grass-1:#4E8C42;     --el-grass-2:#7FB65A;     --el-grass-glow:#C7E39A;
+  --el-earth-1:#7B573D;     --el-earth-2:#A97A4C;     --el-earth-glow:#D8B882;
+  --el-poison-1:#6B4A8C;    --el-poison-2:#9C74B8;    --el-poison-glow:#C9A6E0;
+  --el-normal-1:#8E8984;    --el-normal-2:#B9B0A5;    --el-normal-glow:#E7DCC9;
+  --el-ice-1:#4E8FB0;       --el-ice-2:#8FCBE3;       --el-ice-glow:#DDF4FF;
+  --el-fairy-1:#B4629B;     --el-fairy-2:#DE97C2;     --el-fairy-glow:#FBD5E8;
+  --el-wind-1:#4E8C86;      --el-wind-2:#8CC0B6;      --el-wind-glow:#D6EFE6;
+  --el-steel-1:#4A4F63;     --el-steel-2:#7C8496;     --el-steel-glow:#C2CAD8;
+  --el-psychic-1:#8A5BA6;   --el-psychic-2:#B98BCB;   --el-psychic-glow:#E6CFF2;
+  --el-light-1:#C89A3E;     --el-light-2:#E7C066;     --el-light-glow:#FFF3C9;
+  --el-dark-1:#2A2740;      --el-dark-2:#4A4560;      --el-dark-glow:#6E5FA0;
+  --el-ghost-1:#3E6F68;     --el-ghost-2:#6FB3A4;     --el-ghost-glow:#A9E4D2;
+  --el-dragon-1:#2E6B45;    --el-dragon-2:#57A05C;    --el-dragon-glow:#E7B85A;
+  --el-cosmic-1:#1C6478;    --el-cosmic-2:#3FD8E0;    --el-cosmic-glow:#8FF7F2;
+}
+/* Per-element scope: set data-element on a wrapper, read --el-1 / --el-2 / --el-glow inside. */
+[data-element="fire"]{--el-1:var(--el-fire-1);--el-2:var(--el-fire-2);--el-glow:var(--el-fire-glow)}
+[data-element="water"]{--el-1:var(--el-water-1);--el-2:var(--el-water-2);--el-glow:var(--el-water-glow)}
+[data-element="electric"]{--el-1:var(--el-electric-1);--el-2:var(--el-electric-2);--el-glow:var(--el-electric-glow)}
+[data-element="grass"]{--el-1:var(--el-grass-1);--el-2:var(--el-grass-2);--el-glow:var(--el-grass-glow)}
+[data-element="earth"]{--el-1:var(--el-earth-1);--el-2:var(--el-earth-2);--el-glow:var(--el-earth-glow)}
+[data-element="poison"]{--el-1:var(--el-poison-1);--el-2:var(--el-poison-2);--el-glow:var(--el-poison-glow)}
+[data-element="normal"]{--el-1:var(--el-normal-1);--el-2:var(--el-normal-2);--el-glow:var(--el-normal-glow)}
+[data-element="ice"]{--el-1:var(--el-ice-1);--el-2:var(--el-ice-2);--el-glow:var(--el-ice-glow)}
+[data-element="fairy"]{--el-1:var(--el-fairy-1);--el-2:var(--el-fairy-2);--el-glow:var(--el-fairy-glow)}
+[data-element="wind"]{--el-1:var(--el-wind-1);--el-2:var(--el-wind-2);--el-glow:var(--el-wind-glow)}
+[data-element="steel"]{--el-1:var(--el-steel-1);--el-2:var(--el-steel-2);--el-glow:var(--el-steel-glow)}
+[data-element="psychic"]{--el-1:var(--el-psychic-1);--el-2:var(--el-psychic-2);--el-glow:var(--el-psychic-glow)}
+[data-element="light"]{--el-1:var(--el-light-1);--el-2:var(--el-light-2);--el-glow:var(--el-light-glow)}
+[data-element="dark"]{--el-1:var(--el-dark-1);--el-2:var(--el-dark-2);--el-glow:var(--el-dark-glow)}
+[data-element="ghost"]{--el-1:var(--el-ghost-1);--el-2:var(--el-ghost-2);--el-glow:var(--el-ghost-glow)}
+[data-element="dragon"]{--el-1:var(--el-dragon-1);--el-2:var(--el-dragon-2);--el-glow:var(--el-dragon-glow)}
+[data-element="cosmic"]{--el-1:var(--el-cosmic-1);--el-2:var(--el-cosmic-2);--el-glow:var(--el-cosmic-glow)}

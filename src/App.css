@@ -1,0 +1,20 @@
+.app-boot-gate {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  background: var(--surface-app);
+  color: var(--text-body);
+  font-family: var(--font-ui);
+  text-align: center;
+}
+
+.app-boot-gate--error {
+  color: var(--cs-error);
+}
+
+.app-boot-gate__detail {
+  color: var(--text-muted);
+  font-size: var(--text-body-sm);
+}

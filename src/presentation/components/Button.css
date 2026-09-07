@@ -1,0 +1,103 @@
+/* Adapted from approved-v1 Button.jsx — see Button.tsx header. */
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: var(--transition-press), var(--transition-surface);
+  border-radius: var(--radius-button);
+}
+
+.ds-button--full {
+  display: flex;
+  width: 100%;
+}
+
+.ds-button--sm {
+  min-height: var(--touch-min);
+  padding: 0 var(--space-4);
+  font-size: var(--text-body-sm);
+  border-radius: var(--radius-s);
+}
+
+.ds-button--md {
+  min-height: var(--touch-comfortable);
+  padding: 0 var(--space-5);
+  font-size: var(--text-body-md);
+  border-radius: var(--radius-m);
+}
+
+.ds-button--lg {
+  min-height: 58px;
+  padding: 0 26px;
+  font-size: var(--text-body-lg);
+  border-radius: var(--radius-l);
+}
+
+.ds-button--primary {
+  background: var(--action-primary);
+  color: var(--text-on-primary);
+  border: 1px solid var(--action-primary-press);
+  box-shadow: var(--depth-button);
+}
+.ds-button--primary:active:not(:disabled) {
+  transform: translateY(var(--press-offset));
+  box-shadow: var(--depth-button-press);
+  background: var(--action-primary-press);
+}
+
+.ds-button--secondary {
+  background: var(--action-secondary);
+  color: var(--text-body);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-small);
+}
+.ds-button--secondary:hover:not(:disabled) {
+  background: var(--action-secondary-hover);
+}
+.ds-button--secondary:active:not(:disabled) {
+  transform: translateY(var(--press-offset));
+  box-shadow: none;
+  background: var(--action-secondary-press);
+}
+
+.ds-button--ghost {
+  background: transparent;
+  color: var(--text-link);
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+.ds-button--ghost:hover:not(:disabled) {
+  color: var(--text-link-hover);
+}
+
+.ds-button--destructive {
+  background: var(--action-destructive);
+  color: var(--text-on-primary);
+  border: 1px solid var(--action-destructive-press);
+  box-shadow: 0 3px 0 var(--action-destructive-press);
+}
+.ds-button--destructive:active:not(:disabled) {
+  transform: translateY(var(--press-offset));
+  box-shadow: var(--depth-button-press);
+}
+
+.ds-button:disabled {
+  cursor: not-allowed;
+  background: var(--action-disabled);
+  color: var(--cs-disabled);
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+.ds-button--ghost:disabled {
+  background: transparent;
+}
+
+.ds-button:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-ring-selection);
+}

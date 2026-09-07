@@ -1,0 +1,86 @@
+{
+ "station-provision-station-idle": {
+  "pixel": [
+   509.2,
+   715.7
+  ],
+  "fraction": [
+   0.4973,
+   0.6989
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ },
+ "station-provision-station-active": {
+  "pixel": [
+   504.6,
+   776.2
+  ],
+  "fraction": [
+   0.4928,
+   0.758
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ },
+ "station-fieldworks-bench-idle": {
+  "pixel": [
+   537.6,
+   750.6
+  ],
+  "fraction": [
+   0.525,
+   0.7331
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ },
+ "station-fieldworks-bench-active": {
+  "pixel": [
+   500.4,
+   726.5
+  ],
+  "fraction": [
+   0.4886,
+   0.7094
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ },
+ "display-slot-furniture": {
+  "pixel": [
+   530.8,
+   717.9
+  ],
+  "fraction": [
+   0.5184,
+   0.7011
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ },
+ "infrastructure-expedition-hub": {
+  "pixel": [
+   510.8,
+   684.3
+  ],
+  "fraction": [
+   0.4988,
+   0.6682
+  ],
+  "canvas": [
+   1024,
+   1024
+  ]
+ }
+}

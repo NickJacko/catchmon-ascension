@@ -1,0 +1,17 @@
+:root{
+  /* Approved radius family (Visual Production System §2 · UI Components) */
+  --radius-xs:6px;
+  --radius-s:10px;
+  --radius-m:14px;
+  --radius-l:18px;
+  --radius-xl:24px;
+  --radius-pill:999px; /* reserved for short status markers only */
+
+  /* Semantic */
+  --radius-button:var(--radius-m);
+  --radius-card:var(--radius-l);
+  --radius-panel:var(--radius-xl);
+  --radius-slot:var(--radius-m);
+  --radius-input:var(--radius-s);
+  --radius-thumb:var(--radius-s);
+}

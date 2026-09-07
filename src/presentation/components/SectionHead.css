@@ -1,0 +1,11 @@
+.ds-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 var(--stack-default);
+}
+.ds-section-head__title {
+  margin: 0;
+  font: var(--type-card-title);
+  color: var(--text-body);
+}

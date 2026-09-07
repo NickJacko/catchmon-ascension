@@ -1,0 +1,17 @@
+.ds-art-placeholder {
+  border-radius: var(--radius-card);
+  background: var(--surface-slot);
+  box-shadow: var(--inset-slot);
+  border: 1px dashed var(--border-default);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: var(--space-4);
+}
+.ds-art-placeholder__note {
+  margin: 6px 0 0;
+  font: var(--type-body);
+  font-size: var(--text-body-sm);
+  color: var(--text-muted);
+  max-width: 260px;
+}

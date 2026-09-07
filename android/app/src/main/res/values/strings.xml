@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Catchmon Ascension</string>
+    <string name="title_activity_main">Catchmon Ascension</string>
+    <string name="package_name">com.catchmonascension.dev</string>
+    <string name="custom_url_scheme">com.catchmonascension.dev</string>
+</resources>

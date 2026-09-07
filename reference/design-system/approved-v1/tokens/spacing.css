@@ -1,0 +1,37 @@
+:root{
+  /* Base unit 4px. "Quiet space between important information" is a style rule, not a nicety. */
+  --space-0:0px;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+  --space-16:64px;
+
+  /* Semantic spacing */
+  --gutter-screen:16px;
+  --gap-grid:12px;
+  --pad-card:16px;
+  --pad-card-lg:20px;
+  --pad-panel:20px;
+  --pad-button-y:12px;
+  --pad-button-x:20px;
+  --stack-tight:8px;
+  --stack-default:12px;
+  --stack-loose:20px;
+  --stack-section:32px;
+
+  /* Mobile ergonomics — never below 44px */
+  --touch-min:44px;
+  --touch-comfortable:52px;
+
+  /* Asset footprints */
+  --asset-icon:24px;
+  --asset-thumb:64px;
+  --asset-product:96px;
+  --asset-hero:160px;
+}

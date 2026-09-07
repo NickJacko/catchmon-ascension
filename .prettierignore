@@ -1,0 +1,17 @@
+node_modules
+dist
+coverage
+playwright-report
+test-results
+pnpm-lock.yaml
+
+# Generated/vendored Capacitor native platform projects (Android Gradle
+# project, Xcode project) — not this repo's web app source, same category
+# as `dist` (which they also both bundle a copy of).
+android
+ios
+
+# Canonical/non-generated project content — not owned by the app tooling.
+CLAUDE.md
+docs/
+reference/

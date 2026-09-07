@@ -1,0 +1,8 @@
+.app-save-status-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--gutter-screen) 0;
+  background: var(--surface-panel);
+}

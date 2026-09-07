@@ -1,0 +1,41 @@
+.ds-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font: var(--type-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ds-status-pill--success {
+  color: #2c5e38;
+  background: rgba(101, 185, 122, 0.22);
+  border: 1px solid rgba(101, 185, 122, 0.55);
+}
+.ds-status-pill--warning {
+  color: #8a5e13;
+  background: rgba(230, 169, 76, 0.22);
+  border: 1px solid rgba(230, 169, 76, 0.6);
+}
+.ds-status-pill--error {
+  color: #8e3e3d;
+  background: rgba(217, 104, 104, 0.2);
+  border: 1px solid rgba(217, 104, 104, 0.55);
+}
+.ds-status-pill--info {
+  color: #2f5f7c;
+  background: rgba(103, 169, 216, 0.2);
+  border: 1px solid rgba(103, 169, 216, 0.55);
+}
+.ds-status-pill--premium {
+  color: var(--text-premium);
+  background: rgba(230, 185, 88, 0.24);
+  border: 1px solid var(--border-premium);
+}
+.ds-status-pill--neutral {
+  color: var(--text-muted);
+  background: rgba(123, 87, 61, 0.1);
+  border: 1px solid var(--border-hairline);
+}

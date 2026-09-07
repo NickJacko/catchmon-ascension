@@ -1,0 +1,55 @@
+.app-tabbar {
+  display: flex;
+  gap: 4px;
+  /* `env(safe-area-inset-bottom)` clears the home-indicator / gesture-nav
+     area inside a native WebView shell (Capacitor); falls back to 0 on
+     the web. */
+  padding: 8px var(--space-2) calc(10px + env(safe-area-inset-bottom));
+  padding-left: calc(var(--space-2) + env(safe-area-inset-left));
+  padding-right: calc(var(--space-2) + env(safe-area-inset-right));
+  background: var(--surface-panel);
+  border-top: 1px solid var(--border-hairline);
+  box-shadow: 0 -2px 6px rgba(94, 64, 41, 0.08);
+  position: sticky;
+  bottom: 0;
+  z-index: 4;
+}
+.app-tabbar__tab {
+  flex: 1;
+  min-height: var(--touch-min);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  transition: var(--transition-surface);
+}
+.app-tabbar__tab--active {
+  background: var(--surface-card);
+  border-color: var(--border-hairline);
+  box-shadow: var(--shadow-small);
+}
+.app-tabbar__label {
+  font-family: var(--font-display);
+  font-size: var(--text-micro);
+  font-weight: 600;
+  /* Phase 12 hardening: `--text-subtle` measures ~2.6-2.9:1 against this
+     panel background, well under WCAG AA — `--text-muted` (~5-6.5:1) is
+     the token this design system already uses for readable secondary
+     text elsewhere. */
+  color: var(--text-muted);
+}
+.app-tabbar__tab--active .app-tabbar__label {
+  font-weight: 700;
+  color: var(--text-body);
+}
+.app-tabbar__tab:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-ring-selection);
+}

@@ -1,0 +1,19 @@
+:root{
+  /* Shadow family: small / card / modal / world. Never pure black — always warm walnut-tinted. */
+  --shadow-small:0 1px 2px rgba(94,64,41,.16);
+  --shadow-card:0 2px 4px rgba(94,64,41,.14),0 8px 16px rgba(94,64,41,.10);
+  --shadow-modal:0 8px 20px rgba(78,52,32,.22),0 24px 48px rgba(78,52,32,.18);
+  --shadow-world:0 12px 24px rgba(94,64,41,.26); /* ground shadow under an object in the diorama */
+
+  /* Inner depth for panels and recessed slots */
+  --inset-panel:inset 0 1px 0 rgba(255,248,235,.7);
+  --inset-slot:inset 0 2px 4px rgba(94,64,41,.18),inset 0 -1px 0 rgba(255,248,235,.5);
+
+  /* Pressed-button depth: primary buttons carry a firm bottom edge */
+  --depth-button:0 3px 0 var(--action-primary-depth);
+  --depth-button-press:0 1px 0 var(--action-primary-depth);
+
+  /* Earned glow only (SL-09) */
+  --glow-ring-selection:0 0 0 2px var(--cs-soft-gold),0 0 12px var(--glow-selection);
+  --glow-ring-masterwork:0 0 0 1.5px var(--cs-soft-gold),0 0 18px var(--glow-masterwork);
+}

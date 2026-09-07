@@ -1,0 +1,14 @@
+/*
+ * Adapter — not a token source.
+ *
+ * Re-exposes the canonical design tokens (colors, elements, typography,
+ * spacing, radius, elevation, motion) to the active app. The actual token
+ * values live only in the canonical files below; edit those if a value
+ * needs to change, never here.
+ *
+ * Canonical source: reference/design-system/approved-v1/styles.css
+ * (FOUNDATION LOCKED, read-only) — itself an `@import` aggregate of
+ * tokens/fonts.css, colors.css, elements.css, typography.css, spacing.css,
+ * radius.css, elevation.css, motion.css.
+ */
+@import "../../../reference/design-system/approved-v1/styles.css";

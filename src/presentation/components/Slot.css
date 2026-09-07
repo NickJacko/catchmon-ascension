@@ -1,0 +1,39 @@
+.ds-slot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  background: var(--surface-slot);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-slot);
+  box-shadow: var(--inset-slot);
+  cursor: pointer;
+  transition: var(--transition-surface);
+}
+.ds-slot:disabled {
+  cursor: default;
+}
+.ds-slot--locked {
+  background: var(--cs-sand-300);
+  cursor: not-allowed;
+}
+.ds-slot--selected {
+  border-color: var(--border-premium);
+  box-shadow: var(--inset-slot), var(--glow-ring-selection);
+}
+.ds-slot--masterwork:not(.ds-slot--selected) {
+  border-color: var(--border-premium);
+}
+.ds-slot__art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 5px rgba(94, 64, 41, 0.24));
+}
+/* Phase 12 hardening: without this, a keyboard focus on a Slot falls back
+   to the browser's default outline instead of this app's branded ring
+   (Button/Sheet/BottomTabBar/TopBar all already define this same pair). */
+.ds-slot:focus-visible {
+  outline: none;
+  box-shadow: var(--inset-slot), var(--glow-ring-selection);
+}

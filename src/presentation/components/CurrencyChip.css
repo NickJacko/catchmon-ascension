@@ -1,0 +1,26 @@
+.ds-currency-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface-panel);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-small);
+}
+.ds-currency-chip--sm {
+  padding: 4px 8px;
+}
+.ds-currency-chip--md {
+  padding: 6px 12px;
+}
+.ds-currency-chip__amount {
+  font: var(--type-numeric);
+  color: var(--text-body);
+  font-variant-numeric: tabular-nums;
+}
+.ds-currency-chip--sm .ds-currency-chip__amount {
+  font-size: var(--text-body-sm);
+}
+.ds-currency-chip--md .ds-currency-chip__amount {
+  font-size: var(--text-body-md);
+}

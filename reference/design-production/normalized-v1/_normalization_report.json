@@ -1,0 +1,790 @@
+[
+ {
+  "asset_id": "env-shop-key-wall",
+  "source": "environments/shop-environment_wall_2400x1600.png",
+  "normalized": "environments/shop-environment_wall_2400x1600.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGB",
+  "target_size": [
+   2400,
+   1600
+  ],
+  "scale_applied": 1.5625,
+  "opacity_treatment": "unchanged (already fully opaque RGB)"
+ },
+ {
+  "asset_id": "env-shop-key-floor",
+  "source": "environments/shop-environment_floor_2400x1600.png",
+  "normalized": "environments/shop-environment_floor_2400x1600.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   2400,
+   1600
+  ],
+  "scale_applied": 1.5625,
+  "opacity_treatment": "alpha channel dropped (RGB values preserved as-is) \u2014 vignette removed, now fully opaque"
+ },
+ {
+  "asset_id": "env-shop-key-golden-sample",
+  "source": "environments/shop-key-environment_golden-sample_2048x1536.png",
+  "normalized": "environments/shop-key-environment_golden-sample_2048x1536.png",
+  "source_size": [
+   1448,
+   1086
+  ],
+  "source_mode": "RGB",
+  "target_size": [
+   2048,
+   1536
+  ],
+  "scale_applied": 1.4144
+ },
+ {
+  "asset_id": "station-provision-station-idle-base",
+  "source": "stations/provision-station_idle_base_1024.png",
+  "normalized": "stations/provision-station_idle_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-provision-station-idle-shadow",
+  "source": "stations/provision-station_idle_shadow_1024.png",
+  "normalized": "stations/provision-station_idle_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-provision-station-active-base",
+  "source": "stations/provision-station_active_base_1024.png",
+  "normalized": "stations/provision-station_active_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-provision-station-active-shadow",
+  "source": "stations/provision-station_active_shadow_1024.png",
+  "normalized": "stations/provision-station_active_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-fieldworks-bench-idle-base",
+  "source": "stations/fieldworks-bench_idle_base_1024.png",
+  "normalized": "stations/fieldworks-bench_idle_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-fieldworks-bench-idle-shadow",
+  "source": "stations/fieldworks-bench_idle_shadow_1024.png",
+  "normalized": "stations/fieldworks-bench_idle_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-fieldworks-bench-active-base",
+  "source": "stations/fieldworks-bench_active_base_1024.png",
+  "normalized": "stations/fieldworks-bench_active_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "station-fieldworks-bench-active-shadow",
+  "source": "stations/fieldworks-bench_active_shadow_1024.png",
+  "normalized": "stations/fieldworks-bench_active_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "display-slot-furniture-base",
+  "source": "displays/display-furniture_base_1024.png",
+  "normalized": "displays/display-furniture_base_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "display-slot-furniture-shadow",
+  "source": "displays/display-furniture_shadow_1024.png",
+  "normalized": "displays/display-furniture_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "infrastructure-expedition-hub-base",
+  "source": "infrastructure/expedition-hub_base_1024.png",
+  "normalized": "infrastructure/expedition-hub_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 0.875,
+  "scale_applied": 0.7145,
+  "content_offset": [
+   64,
+   64
+  ],
+  "content_scaled_size": [
+   896,
+   896
+  ]
+ },
+ {
+  "asset_id": "infrastructure-expedition-hub-shadow",
+  "source": "infrastructure/expedition-hub_shadow_1024.png",
+  "normalized": "infrastructure/expedition-hub_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 0.875,
+  "scale_applied": 0.5833,
+  "content_offset": [
+   64,
+   213
+  ],
+  "content_scaled_size": [
+   896,
+   597
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-01-base",
+  "source": "products/product-01_base_1024.png",
+  "normalized": "products/product-01_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-01-shadow",
+  "source": "products/product-01_shadow_1024.png",
+  "normalized": "products/product-01_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-02-base",
+  "source": "products/product-02_base_1024.png",
+  "normalized": "products/product-02_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-02-shadow",
+  "source": "products/product-02_shadow_1024.png",
+  "normalized": "products/product-02_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-03-base",
+  "source": "products/product-03_base_1024.png",
+  "normalized": "products/product-03_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-03-shadow",
+  "source": "products/product-03_shadow_1024.png",
+  "normalized": "products/product-03_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-04-base",
+  "source": "products/product-04_base_1024.png",
+  "normalized": "products/product-04_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-04-shadow",
+  "source": "products/product-04_shadow_1024.png",
+  "normalized": "products/product-04_shadow_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-05-base",
+  "source": "products/product-05_base_1024.png",
+  "normalized": "products/product-05_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "product-slice-product-05-shadow",
+  "source": "products/product-05_shadow_1024.png",
+  "normalized": "products/product-05_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "material-slice-resource-a-base",
+  "source": "materials/routine-material-01_base_1024.png",
+  "normalized": "materials/routine-material-01_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "material-slice-resource-a-shadow",
+  "source": "materials/routine-material-01_shadow_1024.png",
+  "normalized": "materials/routine-material-01_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "material-slice-resource-b-base",
+  "source": "materials/routine-material-02_base_1024.png",
+  "normalized": "materials/routine-material-02_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "material-slice-resource-b-shadow",
+  "source": "materials/routine-material-02_shadow_1024.png",
+  "normalized": "materials/routine-material-02_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "component-slice-component-a-base",
+  "source": "components/special-component-01_base_1024.png",
+  "normalized": "components/special-component-01_base_1024.png",
+  "source_size": [
+   1254,
+   1254
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.8166,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1024
+  ]
+ },
+ {
+  "asset_id": "component-slice-component-a-shadow",
+  "source": "components/special-component-01_shadow_1024.png",
+  "normalized": "components/special-component-01_shadow_1024.png",
+  "source_size": [
+   1536,
+   1024
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1024
+  ],
+  "fill_fraction": 1.0,
+  "scale_applied": 0.6667,
+  "content_offset": [
+   0,
+   170
+  ],
+  "content_scaled_size": [
+   1024,
+   683
+  ]
+ },
+ {
+  "asset_id": "customer-portrait-everyday-buyer",
+  "source": "customers/customer-everyday-buyer_1024x1280.png",
+  "normalized": "customers/customer-everyday-buyer_1024x1280.png",
+  "source_size": [
+   1122,
+   1402
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1280
+  ],
+  "scale_applied": 0.9127,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1280
+  ]
+ },
+ {
+  "asset_id": "customer-portrait-explorer-buyer",
+  "source": "customers/customer-explorer-buyer_1024x1280.png",
+  "normalized": "customers/customer-explorer-buyer_1024x1280.png",
+  "source_size": [
+   1122,
+   1402
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1280
+  ],
+  "scale_applied": 0.9127,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1280
+  ]
+ },
+ {
+  "asset_id": "customer-portrait-special-visitor",
+  "source": "customers/customer-special-visitor_1024x1280.png",
+  "normalized": "customers/customer-special-visitor_1024x1280.png",
+  "source_size": [
+   1122,
+   1402
+  ],
+  "source_mode": "RGBA",
+  "target_size": [
+   1024,
+   1280
+  ],
+  "scale_applied": 0.9127,
+  "content_offset": [
+   0,
+   0
+  ],
+  "content_scaled_size": [
+   1024,
+   1280
+  ]
+ }
+]

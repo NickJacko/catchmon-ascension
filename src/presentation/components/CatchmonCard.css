@@ -1,0 +1,69 @@
+.ds-catchmon-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--pad-card);
+  width: 100%;
+  /* Phase 12 hardening: without this, a flex/grid item's default
+     `min-width: auto` lets one long unbreakable species name (e.g.
+     "Hydroscythe") force its *shared* grid column wider than its 1fr
+     fair share, silently pushing the 3-column mobile roster grid past
+     the viewport edge — confirmed via Playwright at 390px width. */
+  min-width: 0;
+  text-align: center;
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: var(--transition-press), var(--transition-surface);
+}
+.ds-catchmon-card:disabled {
+  cursor: default;
+}
+.ds-catchmon-card--glow {
+  box-shadow: var(--shadow-card), var(--glow-ring-selection);
+}
+.ds-catchmon-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.ds-catchmon-card__art {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-m);
+  background: radial-gradient(
+    120% 90% at 50% 82%,
+    var(--el-glow, transparent) 0%,
+    rgba(255, 248, 235, 0) 62%
+  );
+}
+.ds-catchmon-card__art-image {
+  width: 92%;
+  height: 92%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 10px rgba(94, 64, 41, 0.22));
+}
+.ds-catchmon-card__art-image--undiscovered {
+  filter: brightness(0) opacity(0.28);
+}
+.ds-catchmon-card__name {
+  font: var(--type-card-title);
+  color: var(--text-body);
+  overflow-wrap: break-word;
+}
+.ds-catchmon-card__caption {
+  font: var(--type-body);
+  font-size: var(--text-body-sm);
+  color: var(--text-muted);
+  overflow-wrap: break-word;
+}
+/* Phase 12 hardening: matches the same focus-ring pattern already used by Button/Sheet/Slot/ProductCard/Tabs. */
+.ds-catchmon-card:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-card), var(--glow-ring-selection);
+}

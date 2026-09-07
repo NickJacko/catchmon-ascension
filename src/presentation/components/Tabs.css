@@ -1,0 +1,46 @@
+.ds-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--cs-sand-200);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-l);
+  box-shadow: var(--inset-slot);
+}
+.ds-tabs__tab {
+  flex: 1;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-surface);
+}
+.ds-tabs__tab--active {
+  border: 1px solid var(--border-default);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-small);
+  color: var(--text-body);
+  font-weight: 700;
+}
+.ds-tabs__count {
+  font: var(--type-numeric);
+  font-size: var(--text-micro);
+  /* Phase 12 hardening: see BottomTabBar.css — `--text-subtle` fails WCAG
+     AA for real text; `--text-muted` is the readable secondary-text token. */
+  color: var(--text-muted);
+}
+/* Phase 12 hardening: matches the same focus-ring pattern already used by Button/Sheet/Slot/ProductCard. */
+.ds-tabs__tab:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-ring-selection);
+}

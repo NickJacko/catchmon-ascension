@@ -1,0 +1,72 @@
+:root{
+  /* --- Approved base palette (Art Brief §2) --- */
+  --cs-neutral-dark:#2E2A28;
+  --cs-soft-cream:#F5E8D2;
+  --cs-warm-sand:#D8B882;
+  --cs-muted-walnut:#7B573D;
+  --cs-soft-gold:#E7B85A;
+  --cs-warm-white:#FFF8EB;
+
+  /* --- Derived warm neutral ramp (mixes of the approved six only) --- */
+  --cs-ink-900:#2E2A28;
+  --cs-ink-700:#4A4038;
+  --cs-ink-500:#6B5A4C;
+  --cs-ink-300:#8E8984;
+  --cs-sand-200:#EFDFC4;
+  --cs-sand-300:#E4CFA9;
+  --cs-sand-400:#D8B882;
+  --cs-walnut-600:#8F6949;
+  --cs-walnut-700:#7B573D;
+  --cs-walnut-800:#5E4029;
+
+  /* --- Semantic status (Art Brief §2) --- */
+  --cs-success:#65B97A;
+  --cs-warning:#E6A94C;
+  --cs-error:#D96868;
+  --cs-info:#67A9D8;
+  --cs-premium:#E6B958;
+  --cs-disabled:#8E8984;
+
+  /* --- Semantic aliases: text --- */
+  --text-body:var(--cs-ink-900);
+  --text-muted:var(--cs-ink-500);
+  --text-subtle:var(--cs-ink-300);
+  --text-on-dark:var(--cs-warm-white);
+  --text-on-primary:var(--cs-warm-white);
+  --text-premium:#9A6A16;
+  --text-link:var(--cs-walnut-700);
+  --text-link-hover:var(--cs-walnut-800);
+
+  /* --- Semantic aliases: surfaces --- */
+  --surface-app:#F1E2C6;
+  --surface-card:var(--cs-warm-white);
+  --surface-panel:var(--cs-soft-cream);
+  --surface-raised:#FFFDF7;
+  --surface-slot:#E7D3B0;
+  --surface-slot-inner:#DCC49C;
+  --surface-inverse:var(--cs-ink-900);
+  --surface-scrim:rgba(46,42,40,.56);
+
+  /* --- Semantic aliases: borders --- */
+  --border-hairline:rgba(123,87,61,.22);
+  --border-default:rgba(123,87,61,.38);
+  --border-strong:var(--cs-walnut-700);
+  --border-premium:var(--cs-soft-gold);
+
+  /* --- Semantic aliases: actions --- */
+  --action-primary:var(--cs-walnut-700);
+  --action-primary-hover:#8B6446;
+  --action-primary-press:#5E4029;
+  --action-primary-depth:#4B3222;
+  --action-secondary:var(--cs-sand-200);
+  --action-secondary-hover:#F6EAD3;
+  --action-secondary-press:var(--cs-sand-300);
+  --action-destructive:#B4514F;
+  --action-destructive-press:#8E3E3D;
+  --action-disabled:#DCD5CB;
+
+  /* --- Glow (only for earned magical states, SL-09) --- */
+  --glow-selection:rgba(231,184,90,.55);
+  --glow-masterwork:rgba(255,228,160,.75);
+  --glow-capture:rgba(163,231,240,.7);
+}

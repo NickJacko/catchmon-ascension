@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#7B573D" />
+    <link rel="icon" href="/favicon.png" />
+
+    <!-- iOS/Safari Home Screen install (Mobile Dev Flow task §3) — only
+         the tags Safari actually reads today. `apple-touch-icon` is not
+         reliably read from the manifest, so it stays an explicit link.
+         `black-translucent` pairs with the existing safe-area CSS
+         (viewport-fit=cover + env(safe-area-inset-*) in TopBar/
+         BottomTabBar) so content draws correctly under the status bar
+         instead of leaving a gap. -->
+    <link rel="apple-touch-icon" href="/pwa/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Catchmon" />
+
+    <title>Catchmon Ascension</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

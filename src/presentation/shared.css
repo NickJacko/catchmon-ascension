@@ -1,0 +1,135 @@
+/*
+ * Small shared layout utility classes reused across sheets/screens — not
+ * a second design system, just the recurring flex/grid/list shapes the
+ * approved-v1 prototypes express as one-off inline styles. Every value
+ * still comes from the canonical tokens (spacing.css, colors.css, ...).
+ */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-default);
+}
+.stack--tight {
+  gap: var(--stack-tight);
+}
+.stack--loose {
+  gap: var(--stack-loose);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.row--between {
+  justify-content: space-between;
+}
+/* Phase 12 hardening: `.row` is reused as the interactive row style in
+   several places (e.g. WorldScreen's route buttons) that had no
+   `:focus-visible` rule at all and fell back to the plain browser
+   outline — inert for the many non-focusable elements also using `.row`. */
+.row:focus-visible {
+  outline: none;
+  box-shadow: var(--glow-ring-selection);
+}
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-grid);
+}
+.grid-cards--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.muted {
+  color: var(--text-muted);
+  font-size: var(--text-body-sm);
+}
+.empty-state {
+  padding: var(--space-6);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--text-body-sm);
+}
+
+/* Phase R8: a generic progress/HP-style bar — Journey Rank, Forge Insight,
+   Build Fit, and the battle scene's HP readouts all reuse this one shape
+   rather than each screen inventing its own meter markup. */
+.meter {
+  height: 8px;
+  border-radius: var(--radius-m);
+  background: var(--surface-slot);
+  overflow: hidden;
+}
+.meter--sm {
+  height: 6px;
+}
+.meter__fill {
+  height: 100%;
+  border-radius: var(--radius-m);
+  background: var(--cs-walnut-600);
+  transition: width var(--motion-duration-fast, 150ms) ease-out;
+}
+
+/* CustomerSheet */
+.cs-customer-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--stack-default);
+}
+.cs-customer-header__portrait {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: var(--radius-m);
+  background: var(--surface-slot);
+}
+.cs-customer-header__name {
+  font: var(--type-card-title);
+  font-size: var(--text-body-md);
+  color: var(--text-body);
+}
+.cs-customer-request {
+  margin: 0 0 var(--stack-default);
+  font: var(--type-body);
+  color: var(--text-body);
+}
+.cs-customer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-tight);
+  margin-bottom: var(--stack-default);
+}
+.cs-customer-recommend {
+  margin-bottom: var(--stack-default);
+}
+.cs-customer-recommend__title {
+  font: var(--type-card-title);
+  font-size: var(--text-body-md);
+  margin: 0 0 var(--stack-tight);
+  color: var(--text-body);
+}
+.cs-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border-hairline);
+}
+.cs-action-row__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.cs-action-row__label {
+  font: var(--type-body-strong);
+  font-size: var(--text-body-sm);
+  color: var(--text-body);
+}
+.cs-action-row__value {
+  font: var(--type-numeric);
+  font-size: var(--text-body-sm);
+  color: var(--text-muted);
+}
