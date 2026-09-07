@@ -44,7 +44,17 @@ function App(): React.JSX.Element {
   }
 
   return (
-    <BrowserRouter>
+    // `basename`: routes below are absolute (`/journey`, `/forge`, ...),
+    // assuming the app is served from the domain root. Under a subpath
+    // deploy (a GitHub Pages *project* page, `vite.config.ts`'s
+    // `GH_PAGES_BASE` — see docs/rebuild/MOBILE_APP_TESTING.md), the real
+    // URL is `/<repo>/journey` etc., and without `basename` NONE of these
+    // routes match, so `<Routes>` renders nothing at all — the app boots
+    // successfully (no errors) but silently mounts empty. `BASE_URL` is
+    // Vite's own env var reflecting the configured `base` (`/` normally,
+    // `/<repo>/` for a Pages build) — always correct, never hand-edited
+    // per deploy target.
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<AppShell />}>
           <Route path="/journey" element={<JourneyScreen />} />
